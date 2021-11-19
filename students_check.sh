@@ -5,6 +5,15 @@ model=/tmp/model.txt
 now=/tmp/now.txt
 temp=/tmp/temp.txt
 
+usage(){
+	echo "First edit the model.txt to fit your need!"
+	echo "./students_check.sh <target-dir>"
+}
+
+case "$1" in
+-h|--h|--help) usage ;;
+esac
+
 # the ordinary files only contain name,like jane;
 ls $1>$now
 cp -f ./model.txt $model
