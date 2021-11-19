@@ -21,6 +21,7 @@ for i in $Name;do
 		n=$(($n+1))
 	fi
 done
+echo "total:$n"
 
 echo "---Dumplicated--files------"
 # Check for dumplicated files
@@ -36,9 +37,21 @@ Num_theory=`cat $model|wc -l`
 Num_exact=`ls -l $1|wc -l`
 Num_exact=$(($Num_exact-1)) # ls -l shows one more line than needed
 
+echo "---------tips---------"
 if [ $(($Num_exact+$n)) -ne $Num_theory ];then
 	echo "some files named wrongly or duplicated files exists"
 fi
 
+# extra(for developer): 
+# provided that:
+# a : the number of dumplicated files(extra files)
+# b : the number of named wrongly files
+# c : the number of theroy
+# d : the number of exact files
+# e : the number of lacking files
+# b = d - a + e - c
+# You can append this bash script to give the exact number of
+# named wrongly files and the exact number of extra files by
+# the formula above
 
 
