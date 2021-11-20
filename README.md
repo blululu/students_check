@@ -1,4 +1,4 @@
-#This script is used for look for lacking homework's students
+# This script is used for look for lacking homework's students
 
 If you are looking for a method to find who lacks homework but are not willing to compare one by one,this bash script is for you!
 It's usage is easy and listed below.
@@ -9,7 +9,7 @@ It's usage is easy and listed below.
 git clone github.com/blululu/students_check.git
 cd students_check
 ```
-2.you need edit your model.txt like sample.txt
+2.you need edit your model.txt like [sample.txt](sample/sample.txt)
 ```
 sample.txt:
 jane
@@ -22,5 +22,5 @@ james
 ```
 ./students_check /collecting/homework/directory
 ```
-##License
+## License
 GPLV2
