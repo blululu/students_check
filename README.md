@@ -26,10 +26,10 @@ james
 ./students_check.sh sample/
 ```
 Output:
->-----Lacking--Students-----
->peter
->total:1
->---Dumplicated--files------
+> -----Lacking--Students-----
+> peter
+> total:1
+> ---Dumplicated--files------
 
 ## License
 GPLV2
