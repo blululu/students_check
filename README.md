@@ -1,6 +1,6 @@
 # This script is used for look for lacking homework's students
 
-If you are looking for a method to find who lacks homework but are not willing to compare one by one,this bash script is for you!
+If you are looking for a little tool to find who lacks homework quickly but are not willing to compare one by one,this bash script is for you!
 It's usage is easy and listed below.
 
 1.
