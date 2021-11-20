@@ -9,9 +9,8 @@ It's usage is easy and listed below.
 git clone github.com/blululu/students_check.git
 cd students_check
 ```
-2.you need edit your model.txt like [sample.txt](sample/sample.txt)
+2.you need edit your model.txt like this
 ```
-sample.txt:
 jane
 peter
 frank
@@ -20,7 +19,17 @@ james
 
 3.
 ```
-./students_check /collecting/homework/directory
+./students_check.sh /collecting/homework/directory
 ```
+## Example:
+```
+./students_check.sh sample/
+```
+Output:
+>-----Lacking--Students-----
+>peter
+>total:1
+>---Dumplicated--files------
+
 ## License
 GPLV2
