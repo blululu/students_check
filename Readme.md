@@ -22,5 +22,5 @@ james
 ```
 ./students_check /collecting/homework/directory
 ```
-#License
+##License
 GPLV2
