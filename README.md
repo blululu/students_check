@@ -26,9 +26,9 @@ james
 ./students_check.sh sample/
 ```
 Output:
-> -----Lacking--Students-----
-> peter
-> total:1
+> -----Lacking--Students----- <br/>
+> peter<br/>
+> total:1<br/>
 > ---Dumplicated--files------
 
 ## License
