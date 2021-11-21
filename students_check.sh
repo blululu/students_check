@@ -10,12 +10,26 @@ usage(){
 	echo "./students_check.sh <target-dir>"
 }
 
+# help 
 case "$1" in
 -h|--h|--help) usage ;;
 esac
 
+# are we streaming ? if so, then wait for inputing.
+if [ $# -eq 0 ];then
+	echo >&2 "awaiting your directory to iput"
+	echo >&2 "usage:$0 <taget-dir>"
+	read dir 
+fi
+
+# directory for input
+if [ ! -d $dir ];then
+	echo "Please input a directory"
+	exit 1
+fi
+
 # the ordinary files only contain name,like jane;
-ls $1>$now
+ls $dir>$now
 cp -f ./model.txt $model
 Name=`cat $model`
 n=0 # record the number of lacking homework's students
