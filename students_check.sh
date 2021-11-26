@@ -52,7 +52,7 @@ for i in $Name;do
 	cat $now|grep $i>$temp
 	
 	if [ $(cat $temp | wc -l) -ge 2 ];then
-		echo "$i's file duplicates"
+		cat $temp
 	fi
 done
 
