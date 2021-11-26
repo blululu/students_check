@@ -26,10 +26,14 @@ james
 ./students_check.sh sample/
 ```
 Output:
-> -----Lacking--Students----- <br/>
+> -----Lacking--Students-----<br/>
 > peter<br/>
 > total:1<br/>
-> ---Dumplicated--files------
+> ---Dumplicated--files------<br/>
+> xx-james.pdf<br/>
+> xxx-james-xxx.pdf<br/>
+> ---------tips---------<br/>
+> some files named wrongly or duplicated files exists
 
 ## License
 GPLV2
